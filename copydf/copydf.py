@@ -1,15 +1,15 @@
 from IPython import get_ipython
 import re
 
-def copyDF( df ):
+def copyDF( content ):
     '''
-    A function that copies a dataframe to your clipboard when run in Jupyter.
+    A function that copies a str content to your clipboard when run in Jupyter.
     
     Args:
-        * df (``pandas.DataFrame``): a dataframe to copy to the local clipboard
+        * content (``str``): content to copy to the local clipboard
     
     Returns:
-        None
+        str
     '''
     ipy = get_ipython()
     ipy.run_cell_magic( "javascript", "",
@@ -31,7 +31,5 @@ def copyDF( df ):
             }
         };
         copyToClipboard( "%s" );
-        ''' % ( "{}{}".format( 
-                "\t{}\\n".format( "\t".join( [ str( df.columns[ c ] ) for c in range( len( df.columns ) ) ] ) ),
-                "\\n".join( [ "{}\t{}".format( str( df.index[ r ] ), "\t".join( [ str( df.iloc[ r, c ] ) for c in range( len( df.columns ) ) ] ) ) for r in range( len( df ) ) ] )
-            ) ) )
+        ''' %  content)
+    return content
