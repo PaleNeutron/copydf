@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
   name = 'jupyter2clipboard',
   packages = ['jupyter2clipboard'],
-  version = '0.1.2',
+  version = '0.1.3',
   license = 'MIT',
   description = 'A simple utility to copy jupyter cell output to your local clipboard from a hosted instance of jupyter.',
   author = 'paleneutron',
