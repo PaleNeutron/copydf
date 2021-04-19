@@ -1,4 +1,8 @@
 from distutils.core import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
   name = 'jupyter2clipboard',
   packages = ['jupyter2clipboard'],
@@ -8,6 +12,8 @@ setup(
   author = 'paleneutron',
   author_email = 'paleneutron@outlook.com',
   url = 'https://github.com/PaleNeutron/jupyter2clipboard',
+  long_description=long_description,
+  long_description_content_type="text/markdown",
 #   download_url = 'https://github.com/conceptualio/copydf/archive/0.1.2.tar.gz',
   keywords = ['CACHE'],
   install_requires = [
