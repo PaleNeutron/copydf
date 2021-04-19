@@ -1,14 +1,14 @@
 from distutils.core import setup
 setup(
-  name = 'copydf',
-  packages = ['copydf'],
+  name = 'jupyter2clipboard',
+  packages = ['jupyter2clipboard'],
   version = '0.1.2',
   license = 'MIT',
-  description = 'A simple utility to copy a pandas dataframe to your local clipboard from a hosted instance of jupyter.',
-  author = 'conceptual.io',
-  author_email = 'admin@conceptual.io',
-  url = 'https://github.com/conceptualio',
-  download_url = 'https://github.com/conceptualio/copydf/archive/0.1.2.tar.gz',
+  description = 'A simple utility to copy jupyter cell output to your local clipboard from a hosted instance of jupyter.',
+  author = 'paleneutron',
+  author_email = 'paleneutron@outlook.com',
+  url = 'https://github.com/PaleNeutron/jupyter2clipboard',
+#   download_url = 'https://github.com/conceptualio/copydf/archive/0.1.2.tar.gz',
   keywords = ['CACHE'],
   install_requires = [
           'ipython'
