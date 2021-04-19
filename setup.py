@@ -16,7 +16,7 @@ setup(
   long_description_content_type="text/markdown",
 #   download_url = 'https://github.com/conceptualio/copydf/archive/0.1.2.tar.gz',
   keywords = ['CACHE'],
-  setup_requires=['wheel']
+  setup_requires=['wheel'],
   install_requires = [
           'ipython'
       ],
