@@ -1,7 +1,7 @@
 from IPython import get_ipython
 import re
 
-def copyDF( content ):
+def to_clipboard( content ):
     '''
     A function that copies a str content to your clipboard when run in Jupyter.
     
