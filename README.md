@@ -1,6 +1,6 @@
 # jupyter2clipboard
 
-A simple utility to copy a pandas dataframe to your local clipboard from a hosted instance of jupyter.
+A simple utility to copy jupyter cell output to your local clipboard from a hosted instance of jupyter.
 
 ### Installation
 ```sh
