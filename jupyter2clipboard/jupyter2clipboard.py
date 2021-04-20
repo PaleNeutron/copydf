@@ -11,6 +11,7 @@ def to_clipboard( content ):
     Returns:
         str
     '''
+    content = f"String.raw`{content}`"
     ipy = get_ipython()
     ipy.run_cell_magic( "javascript", "",
         '''
@@ -30,6 +31,5 @@ def to_clipboard( content ):
                 finally { document.body.removeChild( textarea ); }
             }
         };
-        copyToClipboard( "%s" );
-        ''' %  content)
+        ''' +  "copyToClipboard( {} );".format(content))
     return content
